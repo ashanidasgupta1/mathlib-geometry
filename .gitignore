@@ -1,0 +1,8 @@
+.lake/
+*.olean
+*.ilean
+*.olean.trace
+mathlib_hnn_embeddings.pt
+__pycache__/
+.DS_Store
+analysis/mathlib_graph.json

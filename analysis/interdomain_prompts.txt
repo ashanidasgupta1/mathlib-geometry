@@ -1,0 +1,828 @@
+============================================================
+#1 [Category theory <-> Algebraic geometry] composite=0.9999
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: CategoryTheory
+Domain B: AlgebraicGeometry
+Bridge: Category theory <-> Algebraic geometry
+
+  - CategoryTheory.Subobject.lower_comm [A]
+  - CategoryTheory.Limits.imageSubobjectMap.congr_simp [A]
+  - AlgebraicGeometry.Scheme.exists_cover_of_mem_pretopology [B]
+  - CategoryTheory.Triangulated.Octahedron.triangle [A]
+  - AlgebraicGeometry.Scheme.jointlySurjectivePrecoverage.eq_1 [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#2 [Category theory <-> Algebraic geometry] composite=0.9921
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: CategoryTheory
+Domain B: AlgebraicGeometry
+Bridge: Category theory <-> Algebraic geometry
+
+  - CategoryTheory.Presheaf.map_comp_uliftYonedaEquiv_down [A]
+  - CategoryTheory.IsCofiltered.IsEventuallyConstant.exists_isEventuallyConstantTo [A]
+  - AlgebraicGeometry.LocallyOfFiniteType.finiteType_of_affine_subset [B]
+  - CategoryTheory.Abelian.LeftResolution.epi_π_app [A]
+  - AlgebraicGeometry.Scheme.ΓSpecIso_inv [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#3 [Measure theory <-> Probability theory] composite=0.9914
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: MeasureTheory
+Domain B: ProbabilityTheory
+Bridge: Measure theory <-> Probability theory
+
+  - MeasureTheory.BorelCantelli.process_difference_le [A]
+  - ProbabilityTheory.geometricPMFReal.eq_1 [B]
+  - MeasureTheory.tendsto_sum_indicator_atTop_iff' [A]
+  - MeasureTheory.NullMeasurableSet.fundamentalFrontier [A]
+  - ProbabilityTheory.iSup_partitionFiltration [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#4 [Algebra <-> Number fields] composite=0.9908
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Algebra
+Domain B: NumberField
+Bridge: Algebra <-> Number fields
+
+  - AlgebraicIndependent.lift_cardinalMk_le_trdeg [A]
+  - NumberField.mixedEmbedding.signSet [B]
+  - AlgebraicGeometry.LocallyRingedSpace.homMk_toHom [A]
+  - Algebra.Generators.Hom.id [A]
+  - NumberField.mixedEmbedding.iUnion_negAt_plusPart_union [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#5 [Linear algebra <-> Topological spaces] composite=0.9905
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: LinearMap
+Domain B: TopologicalSpace
+Bridge: Linear algebra <-> Topological spaces
+
+  - LinearMap.leftInverse.eq_1 [A]
+  - TopologicalSpace.CompactOpens.coe_finsetSup [B]
+  - TopologicalSpace.CompactOpens.map [B]
+  - LinearMap.BilinForm.sum_right [A]
+  - LinearMap.IsReflective.coroot_apply_self [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#6 [Category theory <-> Algebraic geometry] composite=0.9900
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: CategoryTheory
+Domain B: AlgebraicGeometry
+Bridge: Category theory <-> Algebraic geometry
+
+  - CategoryTheory.uliftYoneda_map_app [A]
+  - AlgebraicGeometry.Scheme.IsLocallyDirected.glueData.eq_1 [B]
+  - AlgebraicGeometry.Scheme.Hom.appIso_inv_app_apply [B]
+  - CategoryTheory.GrothendieckTopology.mem_sieves_iff_coe [A]
+  - CategoryTheory.Limits.coprodComparison.eq_1 [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#7 [Continuous linear maps <-> Filter convergence] composite=0.9894
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: ContinuousLinearMap
+Domain B: Filter
+Bridge: Continuous linear maps <-> Filter convergence
+
+  - ContinuousLinearMap.NonlinearRightInverse.noConfusion [A]
+  - ContinuousLinearMap.NonlinearRightInverse.casesOn [A]
+  - Filter.comap_comm [B]
+  - Filter.EventuallyEq.lieBracketWithin_vectorField_eq_of_insert [B]
+  - Filter.HasBasis.disjoint_iff_right [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#8 [Filters <-> Measure theory] composite=0.9886
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Filter
+Domain B: MeasureTheory
+Bridge: Filters <-> Measure theory
+
+  - Filter.disjoint_principal_principal [A]
+  - Filter.bliminf_eq_liminf [A]
+  - MeasureTheory.SimpleFunc.mk.noConfusion [B]
+  - MeasureTheory.measureReal_mono_null [B]
+  - MeasureTheory.L1.SimpleFunc.setToL1S_eq_setToSimpleFunc [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#9 [Matrices <-> Linear maps] composite=0.9882
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Matrix
+Domain B: LinearMap
+Bridge: Matrices <-> Linear maps
+
+  - Matrix.blockDiagonal'AddMonoidHom_apply [A]
+  - LinearMap.copy.congr_simp [B]
+  - Matrix.diagonal_one' [A]
+  - LinearMap.BilinForm.sum_right [B]
+  - Matrix.rank_mul_eq_right_of_isUnit_det [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#10 [Modules <-> Ideals] composite=0.9880
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Module
+Domain B: Ideal
+Bridge: Modules <-> Ideals
+
+  - Module.IsReflexive.of_finite_of_free [A]
+  - Module.Basis.eval_range [A]
+  - Ideal.Quotient.exists_inv [B]
+  - Ideal.Quotient.mkₐ_eq_mk [B]
+  - Module.Flat.equiv_iff [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#11 [Measure theory <-> Probability theory] composite=0.9877
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: MeasureTheory
+Domain B: ProbabilityTheory
+Bridge: Measure theory <-> Probability theory
+
+  - MeasureTheory.Lp.toTemperedDistribution.congr_simp [A]
+  - ProbabilityTheory.setLIntegral_stieltjesOfMeasurableRat [B]
+  - ProbabilityTheory.IsCondKernelCDF.measurable [B]
+  - MeasureTheory.measureReal_union_add_inter [A]
+  - MeasureTheory.Measure.IsMulLeftInvariant.comap [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#12 [Filters <-> Measure theory] composite=0.9869
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Filter
+Domain B: MeasureTheory
+Bridge: Filters <-> Measure theory
+
+  - Filter.Germ.Tendsto [A]
+  - MeasureTheory.Measure.IsCondKernel.isProbabilityMeasure [B]
+  - Filter.Germ.coe_le [A]
+  - MeasureTheory.piPremeasure_pi' [B]
+  - MeasureTheory.FiniteMeasure.restrict_nonzero_iff [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#13 [Polynomials <-> Complex analysis] composite=0.9864
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Polynomial
+Domain B: Complex
+Bridge: Polynomials <-> Complex analysis
+
+  - Polynomial.eval₂_smulOneHom_eq_smeval [A]
+  - PolynomialLaw.toFun_smul [A]
+  - Complex.nhdsWithin_lt_le_nhdsWithin_stolzSet [B]
+  - Complex.lim_re [B]
+  - ComplexShape.embeddingDown'Add [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#14 [Polynomials <-> Complex analysis] composite=0.9863
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Polynomial
+Domain B: Complex
+Bridge: Polynomials <-> Complex analysis
+
+  - Polynomial.sumIDeriv_eq_self_add [A]
+  - Polynomial.count_map_roots_of_injective [A]
+  - Complex.frontier_setOf_le_re_and_le_im [B]
+  - ComplexShape.prev_π₁ [B]
+  - Complex.cos_two_mul [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#15 [Continuous linear maps <-> Filter convergence] composite=0.9861
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: ContinuousLinearMap
+Domain B: Filter
+Bridge: Continuous linear maps <-> Filter convergence
+
+  - ContinuousLinearMap.fpowerSeriesBilinear_apply_zero [A]
+  - ContinuousLinearMap.coprod_add [A]
+  - Filter.Tendsto.atBot_of_add_const_le [B]
+  - Filter.Germ.instVAdd.eq_1 [B]
+  - ContinuousLinearMap.isPositive_self_comp_adjoint [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#16 [Filters <-> Measure theory] composite=0.9859
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Filter
+Domain B: MeasureTheory
+Bridge: Filters <-> Measure theory
+
+  - Filter.boundedFilterSubmodule.congr_simp [A]
+  - MeasureTheory.lintegral_comp [B]
+  - MeasureTheory.withDensity_apply' [B]
+  - MeasureTheory.IsSetSemiring.recOn [B]
+  - Filter.mem_map₂_iff [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#17 [Linear algebra <-> Topological spaces] composite=0.9855
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: LinearMap
+Domain B: TopologicalSpace
+Bridge: Linear algebra <-> Topological spaces
+
+  - LinearMap.lcomp_apply' [A]
+  - TopologicalSpace.firstCountableTopology_induced [B]
+  - LinearMap.BilinForm.isSymm_iff_flip [A]
+  - LinearMap.IsSymmetric.hasEigenvalue_iInf_of_finiteDimensional [A]
+  - TopologicalSpace.isTopologicalBasis_of_subbasis_of_inter [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#18 [Matrices <-> Linear maps] composite=0.9855
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Matrix
+Domain B: LinearMap
+Bridge: Matrices <-> Linear maps
+
+  - Matrix.inv_subsingleton [A]
+  - Matrix.conjTransposeRingEquiv [A]
+  - LinearMap.isCompl_iSup_ker_pow_iInf_range_pow [B]
+  - Matrix.mul_left_inj_of_invertible [A]
+  - LinearMap.eventually_isCompl_ker_pow_range_pow [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#19 [Algebra <-> Number fields] composite=0.9854
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Algebra
+Domain B: NumberField
+Bridge: Algebra <-> Number fields
+
+  - AlgebraicGeometry.Proj.stalkIso'_symm_mk [A]
+  - NumberField.Units.rootsOfUnity_eq_one [B]
+  - NumberField.Ideal.inertiaDeg_primesOverSpanEquivMonicFactorsMod_symm_apply' [B]
+  - AlgebraicGeometry.QuasiCompactCover.inst [A]
+  - Algebra.FormallyEtale.casesOn [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#20 [Polynomials <-> Complex analysis] composite=0.9850
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Polynomial
+Domain B: Complex
+Bridge: Polynomials <-> Complex analysis
+
+  - Polynomial.eval_surjective [A]
+  - Complex.contDiff_sin [B]
+  - Polynomial.eval₂_smul [A]
+  - Complex.mk.sizeOf_spec [B]
+  - Polynomial.roots_normalize [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#21 [Polynomials <-> Number fields] composite=0.9847
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Polynomial
+Domain B: NumberField
+Bridge: Polynomials <-> Number fields
+
+  - Polynomial.taylor_zero [A]
+  - Polynomial.taylor_zero' [A]
+  - NumberField.mixedEmbedding.negAt.eq_1 [B]
+  - NumberField.IsCMField.complexConj_apply_apply [B]
+  - Polynomial.separable_gcd_left [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#22 [Polynomials <-> Number fields] composite=0.9845
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Polynomial
+Domain B: NumberField
+Bridge: Polynomials <-> Number fields
+
+  - Polynomial.hermite_eq_iterate [A]
+  - NumberField.ComplexEmbedding.Extension.not_isReal_of_not_isReal [B]
+  - NumberField.IsCMField.realFundSystem.congr_simp [B]
+  - Polynomial.Sequence.elems' [A]
+  - Polynomial.Monic.nextCoeff_pow [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#23 [Algebra <-> Number fields] composite=0.9840
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Algebra
+Domain B: NumberField
+Bridge: Algebra <-> Number fields
+
+  - AlgebraicGeometry.instSubsingletonOverTerminalScheme [A]
+  - NumberField.IsTotallyReal.finrank [B]
+  - AlgebraicIndepOn.univ [A]
+  - AlgebraicGeometry.Scheme.Modules.instFullPushforward [A]
+  - NumberField.mixedEmbedding.negAt_apply_isComplex [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#24 [Matroids <-> Graph theory] composite=0.9838
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Matroid
+Domain B: SimpleGraph
+Bridge: Matroids <-> Graph theory
+
+  - Matroid.Spanning.closure_eq [A]
+  - SimpleGraph.Reachable.dist_anti [B]
+  - Matroid.Indep.mem_fundCircuit_iff [A]
+  - SimpleGraph.hasseDualIso [B]
+  - SimpleGraph.IsTree.exists_vert_degree_one_of_nontrivial [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#25 [Modules <-> Ideals] composite=0.9835
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Module
+Domain B: Ideal
+Bridge: Modules <-> Ideals
+
+  - Module.Basis.subset_extend [A]
+  - Ideal.natAbs_det_equiv [B]
+  - ModuleCat.binaryProductLimitCone_cone_π_app_left [A]
+  - Ideal.span_singleton_mul_right_mono [B]
+  - Ideal.isoBaseOfIsPrincipal.congr_simp [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#26 [Matroids <-> Graph theory] composite=0.9830
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Matroid
+Domain B: SimpleGraph
+Bridge: Matroids <-> Graph theory
+
+  - Matroid.RankPos.recOn [A]
+  - Matroid.IsBase.exists_insert_of_ssubset [A]
+  - SimpleGraph.Subgraph.iSup_adj [B]
+  - SimpleGraph.chromaticNumber_eq_biInf [B]
+  - Matroid.map_id [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#27 [Matroids <-> Graph theory] composite=0.9828
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Matroid
+Domain B: SimpleGraph
+Bridge: Matroids <-> Graph theory
+
+  - Matroid.delete_contract_comm' [A]
+  - SimpleGraph.degree_induce_support [B]
+  - SimpleGraph.labelledCopyCount_of_isEmpty [B]
+  - Matroid.rankFinite_of_finite [A]
+  - SimpleGraph.edist_boxProd [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#28 [Measure theory <-> Probability theory] composite=0.9822
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: MeasureTheory
+Domain B: ProbabilityTheory
+Bridge: Measure theory <-> Probability theory
+
+  - MeasureTheory.vadd_set_ae_le [A]
+  - MeasureTheory.lintegral_finset [A]
+  - ProbabilityTheory.centralMoment.eq_1 [B]
+  - ProbabilityTheory.Kernel.density_nonneg [B]
+  - MeasureTheory.smulInvariantMeasure_map_smul [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#29 [Modules <-> Ideals] composite=0.9818
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Module
+Domain B: Ideal
+Bridge: Modules <-> Ideals
+
+  - Module.Finite.recOn [A]
+  - Ideal.smul_closure [B]
+  - Ideal.image_subset_nonunits_valuationSubring [B]
+  - Module.End.eigenspace_le_genEigenspace [A]
+  - ModuleCat.binaryProductLimitCone_cone_π_app_left [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#30 [Group theory <-> Ideal theory] composite=0.9812
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Subgroup
+Domain B: Ideal
+Bridge: Group theory <-> Ideal theory
+
+  - Subgroup.relIndex_strictPeriods [A]
+  - Ideal.quotientEquivAlgOfEq_coe_eq_factor [B]
+  - Subgroup.pairwiseDisjoint_leftCoset_cover_of_sum_inv_index_eq_one [A]
+  - Ideal.iInf_sup_eq_top [B]
+  - Ideal.constr_basisSpanSingleton [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#31 [Matrices <-> Linear maps] composite=0.9798
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Matrix
+Domain B: LinearMap
+Bridge: Matrices <-> Linear maps
+
+  - Matrix.rank.eq_1 [A]
+  - LinearMap.linearProjOfIsCompl_comp_bijective_of_exact [B]
+  - LinearMap.toKerLocalized_isLocalizedModule [B]
+  - Matrix.det_eq_of_forall_row_eq_smul_add_pred_aux [A]
+  - Matrix.GeneralLinearGroup.IsElliptic [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#32 [Group theory <-> Ideal theory] composite=0.9786
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Subgroup
+Domain B: Ideal
+Bridge: Group theory <-> Ideal theory
+
+  - Subgroup.instIsCyclicOfDiscreteTopology [A]
+  - Subgroup.centerCongr_apply_coe [A]
+  - Ideal.relNorm_le_comap [B]
+  - Ideal.bot_quotient_isMaximal_iff [B]
+  - Subgroup.map_injective [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#33 [Linear algebra <-> Topological spaces] composite=0.9783
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: LinearMap
+Domain B: TopologicalSpace
+Bridge: Linear algebra <-> Topological spaces
+
+  - LinearMap.eqLocus_eq_top [A]
+  - LinearMap.nondegenerate_toMatrix₂'_iff [A]
+  - LinearMap.coprod_inl [A]
+  - TopologicalSpace.ext_iff [B]
+  - TopologicalSpace.UpgradedIsCompletelyMetrizableSpace.mk.noConfusion [B]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#34 [Continuous linear maps <-> Filter convergence] composite=0.9774
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: ContinuousLinearMap
+Domain B: Filter
+Bridge: Continuous linear maps <-> Filter convergence
+
+  - ContinuousLinearMap.coe_restrictScalarsL [A]
+  - ContinuousLinearMap.restrictScalarsₗ [A]
+  - Filter.eventuallyConst_set [B]
+  - Filter.limsSup_le_limsSup [B]
+  - ContinuousLinearMap.cpolyomialOn_uncurry_of_multilinear [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#35 [Group theory <-> Ideal theory] composite=0.9763
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Subgroup
+Domain B: Ideal
+Bridge: Group theory <-> Ideal theory
+
+  - Subgroup.FG.eq_1 [A]
+  - Ideal.exists_notMem_dvd_algebraMap_of_primesOver_eq_singleton [B]
+  - Ideal.eq_bot_of_prime [B]
+  - Ideal.exists_nonzero_mem_of_ne_bot [B]
+  - Subgroup.Commensurable.commensurable_inv [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+
+============================================================
+#36 [Polynomials <-> Number fields] composite=0.9757
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+The following theorems form a tight geometric cluster
+straddling two domains in hyperbolic logical space:
+
+Domain A: Polynomial
+Domain B: NumberField
+Bridge: Polynomials <-> Number fields
+
+  - Polynomial.divX_hom_toFun [A]
+  - NumberField.mixedEmbedding.fundamentalCone.logMap_normAtAllPlaces [B]
+  - Polynomial.trdeg_of_isDomain [A]
+  - NumberField.mixedEmbedding.polarSpaceCoord_source [B]
+  - Polynomial.div_tendsto_zero_of_degree_lt [A]
+
+These sit near a void on the geodesic between the two
+domains. Propose a helper lemma or abstraction that
+bridges them. Include a sketch in Lean 4 syntax.
+
+

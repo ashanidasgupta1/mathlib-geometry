@@ -1,0 +1,18 @@
+name = "MathlibKG"
+version = "0.1.0"
+defaultTargets = ["mathlibkg"]
+
+[[lean_lib]]
+name = "MathlibKG"
+
+[[lean_exe]]
+name = "mathlibkg"
+root = "Main"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_exe]]
+name = "exportDeps"
+root = "ExportDeps"

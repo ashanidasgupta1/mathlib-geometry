@@ -1,0 +1,630 @@
+============================================================
+MATCH #1 (IDF=4788.3)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.integral_exp_neg_rpow
+  - ComplexShape.ε_succ
+  - Complex.continuousWithinAt_arg_of_re_neg_of_im_zero
+  - Complex.volume_sum_rpow_lt_one
+  - Complex.norm_add_eq
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.polarCoordReal.congr_simp
+  - NumberField.mixedEmbedding.euclidean.volumePreserving_toMixed_symm
+  - NumberField.mixedEmbedding.volume_fundamentalDomain_latticeBasis
+  - NumberField.AdeleRing
+  - NumberField.mixedEmbedding.fundamentalCone.idealSet.congr_simp
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * EMetric.secondCountable_of_sigmaCompact (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Real.leTotal_R (specificity: 12.3, used by 1 declarations)
+  * InnerProductSpace.complexToReal (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * LipschitzWith.properSpace (specificity: 12.3, used by 1 declarations)
+  * TopologicalSpace.nonempty_of_mem_countableBasis (specificity: 12.3, used by 1 declarations)
+  * NormedField.norm_mul (specificity: 12.3, used by 1 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * RCLike.span_one_I (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedCommRing.mul_comm (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * TopologicalSpace.IsTopologicalBasis.dense_iff (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+
+Shape distance: 0.0249
+Direct edges between A and B: 0
+Specific shared deps: 992
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #2 (IDF=3773.7)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.integral_exp_neg_rpow
+  - ComplexShape.ε_succ
+  - Complex.continuousWithinAt_arg_of_re_neg_of_im_zero
+  - Complex.volume_sum_rpow_lt_one
+  - Complex.norm_add_eq
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.fundamentalCone.abs_det_fderiv_expMapBasis
+  - NumberField.mixedEmbedding.fundamentalCone.fderiv_expMap
+  - NumberField.mixedEmbedding.norm_apply
+  - NumberField.mixedEmbedding.fundamentalCone.fderiv_expMapBasis
+  - NumberField.mixedEmbedding.span_latticeBasis
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DistribMulAction.smul_zero (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * IsOrderedAddMonoid.add_le_add_right (specificity: 12.3, used by 1 declarations)
+  * CauSeq.mul_pos (specificity: 12.3, used by 1 declarations)
+  * RingHom.charZero_iff (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Real.leTotal_R (specificity: 12.3, used by 1 declarations)
+  * DistribMulAction.smul_add (specificity: 12.3, used by 1 declarations)
+  * InnerProductSpace.complexToReal (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * RCLike.span_one_I (specificity: 11.9, used by 2 declarations)
+  * Real.rpow (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+
+Shape distance: 0.0219
+Direct edges between A and B: 0
+Specific shared deps: 855
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #3 (IDF=3698.4)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.integral_exp_neg_rpow
+  - ComplexShape.ε_succ
+  - Complex.continuousWithinAt_arg_of_re_neg_of_im_zero
+  - Complex.volume_sum_rpow_lt_one
+  - Complex.norm_add_eq
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.mem_negAt_plusPart_of_mem
+  - NumberField.mixedEmbedding.neg_of_mem_negA_plusPart
+  - NumberField.mixedEmbedding.exists_ne_zero_mem_ideal_lt
+  - NumberField.Units.regulator_eq_det'
+  - NumberField.InfinitePlace.isReal_comap_iff
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * LipschitzWith.properSpace (specificity: 12.3, used by 1 declarations)
+  * IsOrderedAddMonoid.add_le_add_right (specificity: 12.3, used by 1 declarations)
+  * SubNegZeroMonoid.neg_zero (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * TopologicalSpace.nonempty_of_mem_countableBasis (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * Real.leTotal_R (specificity: 12.3, used by 1 declarations)
+  * EMetric.secondCountable_of_sigmaCompact (specificity: 12.3, used by 1 declarations)
+  * InnerProductSpace.complexToReal (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * Set.Mem (specificity: 11.9, used by 2 declarations)
+  * RCLike.span_one_I (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedCommRing.mul_comm (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+
+Shape distance: 0.0253
+Direct edges between A and B: 0
+Specific shared deps: 827
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #4 (IDF=3374.6)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.isAlgebraic_tan_rat_mul_pi
+  - Complex.isAlgebraic_sin_rat_mul_pi
+  - Complex.UnitDisc.norm_ne_one
+  - Complex.hasSum_taylorSeries_neg_log
+  - ComplexShape.down.eq_1
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.polarCoordReal.congr_simp
+  - NumberField.mixedEmbedding.euclidean.volumePreserving_toMixed_symm
+  - NumberField.mixedEmbedding.volume_fundamentalDomain_latticeBasis
+  - NumberField.AdeleRing
+  - NumberField.mixedEmbedding.fundamentalCone.idealSet.congr_simp
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Complex.inv_zero (specificity: 12.3, used by 1 declarations)
+  * NormedField.norm_mul (specificity: 12.3, used by 1 declarations)
+  * Complex.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedCommRing.mul_comm (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * NonAssocRing.intCast_ofNat (specificity: 11.9, used by 2 declarations)
+  * NonAssocRing.intCast_negSucc (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+  * NormedDivisionRing.norm_mul (specificity: 11.9, used by 2 declarations)
+  * Field.qsmul_def (specificity: 11.9, used by 2 declarations)
+
+Shape distance: 0.0100
+Direct edges between A and B: 0
+Specific shared deps: 650
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #5 (IDF=3227.4)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.betaIntegral.eq_1
+  - Complex.GammaSeq_eq_approx_Gamma_integral
+  - ComplexShape.noConfusionType
+  - Complex.distribSMul
+  - Complex.continuous_circleTransformDeriv
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.polarCoordReal.congr_simp
+  - NumberField.mixedEmbedding.euclidean.volumePreserving_toMixed_symm
+  - NumberField.mixedEmbedding.volume_fundamentalDomain_latticeBasis
+  - NumberField.AdeleRing
+  - NumberField.mixedEmbedding.fundamentalCone.idealSet.congr_simp
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Real.leTotal_R (specificity: 12.3, used by 1 declarations)
+  * NormedField.norm_mul (specificity: 12.3, used by 1 declarations)
+  * InnerProductSpace.complexToReal (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * NormedDivisionRing.dist_eq (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedRing.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Field.qsmul_def (specificity: 11.9, used by 2 declarations)
+  * Semifield.mul_inv_cancel (specificity: 11.6, used by 3 declarations)
+  * Field.nnratCast_def (specificity: 11.6, used by 3 declarations)
+
+Shape distance: 0.0215
+Direct edges between A and B: 0
+Specific shared deps: 675
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #6 (IDF=3124.6)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.sin_periodic
+  - Complex.sin_two_pi_sub
+  - Complex.HadamardThreeLines.scale_diffContOnCl
+  - Complex.ext_norm_arg_iff
+  - Complex.isPrimitiveRoot_exp_rat_of_even_num
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.polarCoordReal.congr_simp
+  - NumberField.mixedEmbedding.euclidean.volumePreserving_toMixed_symm
+  - NumberField.mixedEmbedding.volume_fundamentalDomain_latticeBasis
+  - NumberField.AdeleRing
+  - NumberField.mixedEmbedding.fundamentalCone.idealSet.congr_simp
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Complex.inv_zero (specificity: 12.3, used by 1 declarations)
+  * NormedField.norm_mul (specificity: 12.3, used by 1 declarations)
+  * Complex.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedCommRing.mul_comm (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * NonAssocRing.intCast_ofNat (specificity: 11.9, used by 2 declarations)
+  * NonAssocRing.intCast_negSucc (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedRing.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Semifield.mul_inv_cancel (specificity: 11.6, used by 3 declarations)
+  * Field.nnratCast_def (specificity: 11.6, used by 3 declarations)
+
+Shape distance: 0.0228
+Direct edges between A and B: 0
+Specific shared deps: 594
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #7 (IDF=3029.9)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.range_cos
+  - Complex.norm_max_aux₃
+  - Complex.norm_max_aux₂
+  - Complex.UnitDisc.instIsScalarTower_circle
+  - Complex.integral_comp_pi_polarCoord_symm
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.polarCoordReal.congr_simp
+  - NumberField.mixedEmbedding.euclidean.volumePreserving_toMixed_symm
+  - NumberField.mixedEmbedding.volume_fundamentalDomain_latticeBasis
+  - NumberField.AdeleRing
+  - NumberField.mixedEmbedding.fundamentalCone.idealSet.congr_simp
+
+Most specific shared dependencies (the "C" mediating both):
+  * LipschitzWith.properSpace (specificity: 12.3, used by 1 declarations)
+  * TopologicalSpace.nonempty_of_mem_countableBasis (specificity: 12.3, used by 1 declarations)
+  * EMetric.secondCountable_of_sigmaCompact (specificity: 12.3, used by 1 declarations)
+  * InnerProductSpace.complexToReal (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * RCLike.span_one_I (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * TopologicalSpace.IsTopologicalBasis.dense_iff (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+  * Complex.lipschitz_equivRealProd (specificity: 11.9, used by 2 declarations)
+  * Field.qsmul_def (specificity: 11.9, used by 2 declarations)
+  * Complex.volume_preserving_equiv_pi (specificity: 11.9, used by 2 declarations)
+  * Semifield.mul_inv_cancel (specificity: 11.6, used by 3 declarations)
+  * Field.nnratCast_def (specificity: 11.6, used by 3 declarations)
+  * Semifield.div_eq_mul_inv (specificity: 11.6, used by 3 declarations)
+  * Field.zpow_neg' (specificity: 11.6, used by 3 declarations)
+  * NormedCommRing.mul_comm (specificity: 11.6, used by 3 declarations)
+  * Semifield.inv_zero (specificity: 11.6, used by 3 declarations)
+  * Semifield.zpow_neg' (specificity: 11.6, used by 3 declarations)
+
+Shape distance: 0.0236
+Direct edges between A and B: 0
+Specific shared deps: 596
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #8 (IDF=2853.1)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.integral_exp_neg_rpow
+  - ComplexShape.ε_succ
+  - Complex.continuousWithinAt_arg_of_re_neg_of_im_zero
+  - Complex.volume_sum_rpow_lt_one
+  - Complex.norm_add_eq
+
+Constellation B (Continuous linear maps):
+  - ContinuousLinearMap.rayleighQuotient.eq_1
+  - ContinuousLinearMap.opNorm_mulLeftRight_apply_apply_le
+  - ContinuousLinearMap.norm_compContinuousAlternatingMap_le
+  - ContinuousLinearMap.isPositive_self_comp_adjoint
+  - ContinuousLinearMap.norm_eq_iSup_rayleighQuotient
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DistribMulAction.smul_zero (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * IsOrderedAddMonoid.add_le_add_right (specificity: 12.3, used by 1 declarations)
+  * CauSeq.mul_pos (specificity: 12.3, used by 1 declarations)
+  * SubNegZeroMonoid.neg_zero (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * Real.leTotal_R (specificity: 12.3, used by 1 declarations)
+  * NormedField.norm_mul (specificity: 12.3, used by 1 declarations)
+  * DistribMulAction.smul_add (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedCommRing.mul_comm (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * MulZeroOneClass.zero_mul (specificity: 11.9, used by 2 declarations)
+  * MulZeroOneClass.mul_zero (specificity: 11.9, used by 2 declarations)
+
+Shape distance: 0.0321
+Direct edges between A and B: 0
+Specific shared deps: 645
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #9 (IDF=2846.7)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.betaIntegral.eq_1
+  - Complex.GammaSeq_eq_approx_Gamma_integral
+  - ComplexShape.noConfusionType
+  - Complex.distribSMul
+  - Complex.continuous_circleTransformDeriv
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.fundamentalCone.abs_det_fderiv_expMapBasis
+  - NumberField.mixedEmbedding.fundamentalCone.fderiv_expMap
+  - NumberField.mixedEmbedding.norm_apply
+  - NumberField.mixedEmbedding.fundamentalCone.fderiv_expMapBasis
+  - NumberField.mixedEmbedding.span_latticeBasis
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivisionSemiring.zpow_neg' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.div_eq_mul_inv (specificity: 12.3, used by 1 declarations)
+  * DistribMulAction.smul_zero (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_succ' (specificity: 12.3, used by 1 declarations)
+  * RingHom.charZero_iff (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.zpow_zero' (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.toNontrivial (specificity: 12.3, used by 1 declarations)
+  * DivisionSemiring.inv_zero (specificity: 12.3, used by 1 declarations)
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Real.leTotal_R (specificity: 12.3, used by 1 declarations)
+  * DistribMulAction.smul_add (specificity: 12.3, used by 1 declarations)
+  * InnerProductSpace.complexToReal (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedRing.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Field.qsmul_def (specificity: 11.9, used by 2 declarations)
+  * Semifield.mul_inv_cancel (specificity: 11.6, used by 3 declarations)
+
+Shape distance: 0.0190
+Direct edges between A and B: 0
+Specific shared deps: 616
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+
+============================================================
+MATCH #10 (IDF=2805.4)
+============================================================
+
+I am analyzing the Lean 4 Mathlib library.
+
+I found two constellations in DIFFERENT domains with nearly
+identical geometric structure AND specific shared dependencies
+(not just foundational typeclasses — these are meaningful
+mathematical connections).
+
+Constellation A (Complex analysis):
+  - Complex.Gamma_one
+  - Complex.digamma_one
+  - ComplexShape.symm_Rel
+  - Complex.dist_le_div_mul_dist_of_mapsTo_ball
+  - ComplexShape.eulerCharSignsDownInt
+
+Constellation B (Number fields):
+  - NumberField.mixedEmbedding.polarCoordReal.congr_simp
+  - NumberField.mixedEmbedding.euclidean.volumePreserving_toMixed_symm
+  - NumberField.mixedEmbedding.volume_fundamentalDomain_latticeBasis
+  - NumberField.AdeleRing
+  - NumberField.mixedEmbedding.fundamentalCone.idealSet.congr_simp
+
+Most specific shared dependencies (the "C" mediating both):
+  * DivInvOneMonoid.inv_one (specificity: 12.3, used by 1 declarations)
+  * Complex.inv_zero (specificity: 12.3, used by 1 declarations)
+  * NormedField.norm_mul (specificity: 12.3, used by 1 declarations)
+  * Complex.mul_inv_cancel (specificity: 12.3, used by 1 declarations)
+  * Semifield.nnqsmul_def (specificity: 11.9, used by 2 declarations)
+  * Field.ratCast_def (specificity: 11.9, used by 2 declarations)
+  * NormedField.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Semifield.nnratCast_def (specificity: 11.9, used by 2 declarations)
+  * NonUnitalNormedRing.dist_eq (specificity: 11.9, used by 2 declarations)
+  * Field.qsmul_def (specificity: 11.9, used by 2 declarations)
+  * CommGroupWithZero.toNontrivial (specificity: 11.6, used by 3 declarations)
+  * Semifield.mul_inv_cancel (specificity: 11.6, used by 3 declarations)
+  * Field.nnratCast_def (specificity: 11.6, used by 3 declarations)
+  * CommGroupWithZero.inv_zero (specificity: 11.6, used by 3 declarations)
+  * Semifield.div_eq_mul_inv (specificity: 11.6, used by 3 declarations)
+  * Field.zpow_neg' (specificity: 11.6, used by 3 declarations)
+  * NormedCommRing.mul_comm (specificity: 11.6, used by 3 declarations)
+  * Semifield.inv_zero (specificity: 11.6, used by 3 declarations)
+  * MonoidWithZero.zero_mul (specificity: 11.6, used by 3 declarations)
+  * Semifield.zpow_neg' (specificity: 11.6, used by 3 declarations)
+
+Shape distance: 0.0139
+Direct edges between A and B: 0
+Specific shared deps: 571
+
+These shared dependencies are NOT generic foundations like
+AddCommGroup — they are specific mathematical lemmas that both
+constellations build on independently.
+
+Please propose:
+1. What the specific shared deps reveal about the mathematical
+   relationship between these two domains
+2. A NEW theorem in the "amalgamation" that uses concepts from
+   BOTH domains, mediated through the shared structure
+3. A sketch in Lean 4 syntax
+
+

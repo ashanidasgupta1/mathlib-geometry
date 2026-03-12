@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Mathlib",
+    "nodes": 619518,
+    "edges": 12506540,
+    "nodes_pruned": 613348,
+    "edges_pruned": 2424185,
+    "delta": 1.5,
+    "mean_kappa": 0.021896259200682347,
+    "std_kappa": 0.09175882779779138
+  },
+  {
+    "name": "Erdos-Renyi",
+    "nodes": 619518,
+    "edges": 12506540,
+    "nodes_pruned": 614696,
+    "edges_pruned": 12223930,
+    "delta": 1.0,
+    "mean_kappa": -0.01242949913479446,
+    "std_kappa": 0.001469981767350875
+  },
+  {
+    "name": "Barabasi-Albert",
+    "nodes": 619518,
+    "edges": 12389960,
+    "nodes_pruned": 613361,
+    "edges_pruned": 9991832,
+    "delta": 1.0,
+    "mean_kappa": -0.013427889812664452,
+    "std_kappa": 0.005957366070295748
+  },
+  {
+    "name": "Configuration",
+    "nodes": 619518,
+    "edges": 11079642,
+    "nodes_pruned": 613336,
+    "edges_pruned": 4209801,
+    "delta": 1.0,
+    "mean_kappa": -0.021057848932404158,
+    "std_kappa": 0.019097604539957104
+  }
+]
